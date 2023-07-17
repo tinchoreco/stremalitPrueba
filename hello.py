@@ -55,8 +55,9 @@ def main():
             #clasificacion = np.asscalar(clasificacion)
             clasificacion = clasificacion.item()
     
-            # Devolver la clasificación como respuesta
-            return {"clasificacion": clasificacion, "texto": respuesta[clasificacion]}
+            # Mostrar la clasificación y el texto correspondiente
+            st.write(f"Clasificación: {clasificacion}")
+            st.write(f"Texto: {respuesta[clasificacion]}")
             
         else:
             st.warning("Por favor, ingrese la magnitud y la intensidad del sismo.")
