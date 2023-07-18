@@ -49,7 +49,7 @@ def main():
         if magnitude and intensity:
             
             # Realizar la clasificación utilizando el modelo entrenado
-            clasificacion = model.predict([[magnitude, intensity]])
+            clasificacion = model.predict([[intesity, magnitude]])
 
             # Convertir el resultado en un tipo de datos nativo de Python
             #clasificacion = np.asscalar(clasificacion)
